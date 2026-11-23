@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astrosnn-eventc"
+version = "1.0.0"
+description = "Fault-Tolerant Neuromorphic Event-Based Vision through an Astrocyte-Inspired Spiking Neural Network on FPGA"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Mohamad Yazan Sadoun", email = "mohamad.yazan@ou.edu" },
+  { name = "Edris Zaman Farsa", email = "edris.farsa@tuwien.ac.at" },
+  { name = "Sarah Sharif", email = "s.sh@ou.edu" },
+  { name = "Yaser Mike Banad", email = "bana@ou.edu" },
+]
+dependencies = [
+  "numpy>=1.23",
+  "torch>=2.0",
+]
+
+[project.urls]
+Repository = "https://github.com/INQUIRELAB/AstroSNN-EventC"
+
+[tool.setuptools.packages.find]
+include = ["astrocyte*"]
